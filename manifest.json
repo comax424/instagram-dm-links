@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "IG DM Links",
+  "version": "1.0",
+  "description": "Zeigt die Link-Buttons automatisierter Instagram-DMs (z. B. ManyChat) in Instagram Web an. Nur lesen, keine Aktionen.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
